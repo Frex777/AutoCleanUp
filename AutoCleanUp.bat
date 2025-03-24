@@ -43,12 +43,6 @@ pnputil /d e /f
 echo [AutoCleanUp]: Disabling and removing hibernation file...
 powercfg -h off
 
-echo [AutoCleanUp]: Cleaning WinSxS...
-Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
-
-echo [AutoCleanUp]: Running Windows Disk Cleanup...
-cleanmgr /sagerun:1
-
 echo [AutoCleanUp]: Cleanup completed.
 
 exit
