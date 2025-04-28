@@ -18,9 +18,6 @@ del /s /f /q "%SystemRoot%\Prefetch\*" 2>nul
 
 del /s /f /q "%SystemRoot%\SoftwareDistribution\Download\*" 2>nul
 
-del /s /f /q "%SystemRoot%\Minidump\*" 2>nul
-del /s /f /q "%LOCALAPPDATA%\CrashDumps\*" 2>nul
-
 del /s /f /q "%LOCALAPPDATA%\Microsoft\Windows\WER\ReportQueue\*" 2>nul
 del /s /f /q "%LOCALAPPDATA%\Microsoft\Windows\WER\Temp\*" 2>nul
 
@@ -35,7 +32,6 @@ del /s /f /q "%SystemRoot%\SoftwareDistribution\DeliveryOptimization\*" 2>nul
 echo [AutoCleanUp]: Cleaning Windows logs...
 wevtutil cl Application
 wevtutil cl Security
-wevtutil cl System
 
 echo [AutoCleanUp]: Removing old drivers...
 pnputil /d e /f
