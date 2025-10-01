@@ -1,15 +1,14 @@
 # AutoCleanUp
 
-A simple batch script that helps keep Windows clean by automatically removing temporary files, cache, and other unnecessary folders.  
+A lightweight batch script for Windows that automatically deletes temporary files, cache, and other unnecessary folders to keep the system clean.  
 
 ## Features
-- Cleans common Windows temp directories  
-- Removes leftover cache and logs  
-- Runs with a single double-click  
+- Cleans Windows temp folders and caches  
+- Auto-elevates with Administrator rights if required  
+- Can be launched manually or added to startup for automatic cleaning  
 
 ## Usage
-1. Download or clone this repository  
-2. Run `autocleanup.bat` as Administrator  
-3. Done – your system gets cleaned automatically  
+- Run `autocleanup.bat` directly  
+- (Optional) Add it to Windows Startup for automatic cleanup on boot  
 
-⚠️ Use at your own risk. The script permanently deletes files.
+⚠️ Files are permanently deleted. Use at your own risk.
