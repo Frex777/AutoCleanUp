@@ -1,4 +1,4 @@
-# AutoCleanUp.bat
+# AutoCleanUp
 
 A simple batch script that helps keep Windows clean by automatically removing temporary files, cache, and other unnecessary folders.  
 
