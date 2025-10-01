@@ -22,8 +22,6 @@ del /s /f /q "%LOCALAPPDATA%\Microsoft\Windows\WER\ReportQueue\*" 2>nul
 del /s /f /q "%LOCALAPPDATA%\Microsoft\Windows\WER\Temp\*" 2>nul
 
 :: ========================================================
-:: EXPERIMENTAL
-:: ========================================================
 
 echo [AutoCleanUp]: Cleaning Windows Update leftovers...
 del /s /f /q "%SystemRoot%\SoftwareDistribution\Datastore\*" 2>nul
@@ -46,3 +44,4 @@ exit
 :: ========================================================
 :: AUTHOR: frex777
 :: ========================================================
+
